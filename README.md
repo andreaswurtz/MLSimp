@@ -1,3 +1,11 @@
+# HALLO husk lige
+TrajData/Geolife_TVT/test.pkl
+TrajData/Geolife_TVT/train.pkl
+Val/Geolife/rtree_simp.dat
+Val/Geolife/rtree_test_persisted.dat
+
+disse fire filer skal downloades manuelt fra mlsimp repoet da de er for store
+
 # MLSimp
 
 This is the implementation code for "Quantifying Point Contributions: A Lightweight Framework for Efficient and Effective Query-Driven Trajectory Simplification".
