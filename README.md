@@ -2,6 +2,7 @@
 - TrajData/Geolife_TVT/train.pkl
 - Val/Geolife/rtree_simp.dat
 - Val/Geolife/rtree_test_persisted.dat
+- MLSimp/Grid&Graph/Geolife/gridmap_100_100_50_20000.pickle
 
 disse tre filer skal downloades manuelt fra mlsimp repoet da de er for store
 
