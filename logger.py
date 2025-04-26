@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:893390b0a03eeb3c16b982f23539fcc366cb8c1c967edb823ea9e461356b2324
-size 592
+import logging , sys
+
+def get_logger(name, flog_name, stdout=True):
+
+
+    logger = logging.getLogger(name)
+    h_file = logging.FileHandler(flog_name)
+    h_file.setFormatter(logging.Formatter('%(message)s'))
+    logger.addHandler(h_file)
+    logger.setLevel(logging.INFO)
+    if stdout:
+        h_stdout = logging.StreamHandler(sys.stdout)
+        logger.addHandler(h_stdout)
+    return logger
+
+
+if __name__ == '__main__':
+    logger1 = get_logger('log1', 'log1.log')
+    logger2 = get_logger('log2', 'log2.log', False)
+    logger1.info('test1')
+    logger2.info('test2')
